@@ -17,6 +17,13 @@ export default {
   },
   getBaseBreedsList: function() {
     return axios.get("https://dog.ceo/api/breeds/list");
+  },
+  login: function(data){
+    return axios({
+      url: "/auth/login",
+      method: "POST",
+      data
+    })
   }
 };
 
