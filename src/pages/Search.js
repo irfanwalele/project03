@@ -73,9 +73,20 @@ function MovieCard({ movie }) {
     <>
       <h1> {movie.name} </h1>
       <img src={movie.picture} alt={movie.name} style={{height: '250px', maxWidth: "100%"}} />
-      <h1> {movie.locations[0].display_name} </h1>
+     {movie.locations.map(location => {
+       return(
+      <>
+        {/* <h1> {location.display_name} </h1> */}
+        <a href={location.url} alt={movie.name} target="blank">
+          <img src={location.icon} alt={movie.name}/>
+        </a>
+      </>
+       )
+     })}
+
     </>
   )
 }
 
 export default Search;
+
