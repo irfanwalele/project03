@@ -27,7 +27,8 @@
     "axios": "^0.19.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.7.1"
+    "mongoose": "^5.7.1",
+    "rapidapi": "^2.0.3"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
