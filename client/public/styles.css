@@ -1,0 +1,132 @@
+.tagline {
+  font-family: 'Lato', sans-serif;
+  font-size: .75rem;
+  color: #E4E4E4
+}
+
+.bg-dark {
+    background-color: #286da8!important;
+}
+
+.title {
+  padding-top: 275px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 60pt;
+  color: rgb(252, 252, 252);
+}
+
+.streamline-title {
+  font-family: 'Lobster', cursive;
+  color: whitesmoke;
+  padding-top: 80px;
+  font-size: 35pt;
+}
+
+
+.options {
+  padding-bottom: 2rem;
+}
+
+.options-text {
+  font-family: 'Lato', sans-serif;
+}
+
+.index-button {
+  background-color: #286da8;
+}
+
+body, html {
+    height: 100%;
+}
+
+  .background {
+  /* The image used */
+  background-image: url("C:/Users/fjama/Desktop/wp2081147.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.selection-pages-header {
+  width: 100%;
+  /* height: 1em; */
+  background-color: #b37d4e25; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.title-for-section  {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #438496
+}
+
+.main-content {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+body {
+  margin: 10;
+  padding: 10;
+ }
+ 
+ .search-box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f3640;
+  height: 50px;
+  border-radius: 20px;
+  padding: 5px;
+ }
+ 
+ .search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+ }
+ 
+ .search-box:hover > .search-btn {
+  background: white;
+  color: black;
+ }
+ 
+ .search-btn {
+  color: #1872e8;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: white;
+  cursor: pointer;
+ }
+ 
+ .search-btn > i {
+  font-size: 30px;
+ }
+ 
+ .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-weight: bold;
+ }
