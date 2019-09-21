@@ -12,7 +12,7 @@ function Navbar() {
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link
+            {/* <Link
               to="/"
               className={
                 window.location.pathname === "/" || window.location.pathname === "/about"
@@ -21,7 +21,7 @@ function Navbar() {
               }
             >
               About
-            </Link>
+            </Link> */}
           </li>
           <li className="nav-item">
             <Link

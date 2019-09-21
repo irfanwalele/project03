@@ -1,5 +1,11 @@
 .hero {
-  height: 500px;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+body {
+  height: 1000px;
   background-size: cover;
   background-position: center;
   position: relative;
