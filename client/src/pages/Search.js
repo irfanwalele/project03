@@ -5,12 +5,6 @@ import SearchForm from "../components/SearchForm"
 import Alert from "../components/Alert";
 import Hero from "../components/Hero";
 
-
-// import { thisExpression } from "@babel/types";
-
-
-
-
 class Search extends Component {
   state = {
     search: "",
@@ -46,16 +40,11 @@ class Search extends Component {
   render() {
     return (
       <div>
-                
       <Hero backgroundImage="https://i.ibb.co/XWFKKdd/wp2081147.png">
         <h1>Streamline</h1>
         <h2>Find your entertainment..all streamlined</h2>
-   
-        
-      <Container style={{ minHeight: "100%" }}>
-  
 
-          {/* <h1 className="text-center">Search By Breed!</h1> */}
+      <Container>
           <Alert
             type="danger"
             style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
@@ -69,18 +58,11 @@ class Search extends Component {
             breeds={this.state.breeds}
           />
           </Container>
+
         </Hero>
           {
             this.state.results.map((movie, i) => <MovieCard key={i + '-movie'} movie={movie} />)
           }
-          
-          {/* {
-            for(var i = 0; i < this.state.results; i++){
-              var movie = this.state.results[i];
-              <MovieCard key={i+'-movie'} movie={movie} />
-            }
-          } */}
-        
       </div>
     );
   }
@@ -89,8 +71,8 @@ class Search extends Component {
 function MovieCard({ movie }) {
   return (
     <>
-      <h3> {movie.name} </h3>
-      <img src={movie.picture} alt={movie.name} style={{height: '100px', maxWidth: "100%"}} />
+      <span><h3> {movie.name} </h3>
+      <img src={movie.picture} alt={movie.name} style={{height: '150px', maxWidth: "50%"}} />
      {movie.locations.map(location => {
        return(
       <>
@@ -101,7 +83,7 @@ function MovieCard({ movie }) {
       </>
        )
      })}
-
+</span>
     </>
   )
 }
