@@ -22,7 +22,7 @@ function SearchForm(props) {
             <option value={breed} key={breed} />
           ))}
         </datalist>
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
+        <button href="#results" type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
           Search
         </button>
       </div>
