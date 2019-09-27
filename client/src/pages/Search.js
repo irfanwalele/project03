@@ -4,6 +4,8 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm"
 import Alert from "../components/Alert";
 import Hero from "../components/Hero";
+import smoothscroll from "../utils/smoothScrollFunction";
+import "./style.css";
 
 class Search extends Component {
   state = {
@@ -26,7 +28,14 @@ class Search extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+  
 
+    
+    var results = document.getElementById("results").offsetTop;
+    // var startPoint = 
+    smoothscroll(document.documentElement, results, 200);
+    
+    
     API.rapidAPI(this.state.search)
       .then(res => {
         console.log(res.data.results);
@@ -60,9 +69,11 @@ class Search extends Component {
           </Container>
 
         </Hero>
-          {
+          <div id="results">
+          { 
             this.state.results.map((movie, i) => <MovieCard key={i + '-movie'} movie={movie} />)
           }
+          </div>
       </div>
     );
   }

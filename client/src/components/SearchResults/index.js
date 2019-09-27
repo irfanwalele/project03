@@ -1,16 +1,33 @@
-import React from "react";
-import "./style.css";
+import React, { useState } from "react";
 
-function SearchResults(props) {
+
+const Search = (props) => {
+  const [searchValue, setSearchValue] = useState("");
+  
+  const handleSearchInputChanges = (e) => {
+    setSearchValue(e.target.value);
+  }
+
+  const resetInputField = () => {
+    setSearchValue("")
+  }
+
+  const callSearchFunction = (e) => {
+    e.preventDefault();
+    props.search(searchValue);
+    resetInputField();
+  }
+
   return (
-    <ul className="list-group search-results">
-      {props.results.map(result => (
-        <li key={result} className="list-group-item">
-          <img alt="Dog" src={result} className="img-fluid" />
-        </li>
-      ))}
-    </ul>
-  );
+      <form className="search">
+        <input
+          value={searchValue}
+          onChange={handleSearchInputChanges}
+          type="text"
+        />
+        <input onClick={callSearchFunction} type="submit" value="SEARCH" />
+      </form>
+    );
 }
 
-export default SearchResults;
+export default Search;
