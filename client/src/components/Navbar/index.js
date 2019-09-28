@@ -23,7 +23,7 @@ function Navbar() {
               About
             </Link> */}
           </li>
-          <li className="nav-item">
+          <li className="nav-item colum-blue">
             <Link
               to="/login"
               className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
