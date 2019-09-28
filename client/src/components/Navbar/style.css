@@ -1,3 +1,14 @@
 nav.navbar.navbar-default {
   margin-bottom: 0;
 }
+
+.size50 {
+  width: 7.5%;
+  height: 7.5%;
+}
+
+.colum-blue {
+  color: #003865;
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: bolder;
+}
