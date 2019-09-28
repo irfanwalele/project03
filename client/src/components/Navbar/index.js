@@ -5,9 +5,9 @@ import "./style.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-sm navbar-md navbar-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        <img src={'https://i.ibb.co/cYW1rJ9/Streamline-Logo.png'} style={{ width: 50, height: 50 }}/> Streamline
+        <img className="size50" src={'https://i.ibb.co/cYW1rJ9/Streamline-Logo.png'} /> <span className="colum-blue">Streamline</span>
       </Link>
       <div>
         <ul className="navbar-nav">
