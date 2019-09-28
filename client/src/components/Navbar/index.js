@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        Streamline
+        <img src={'https://i.ibb.co/cYW1rJ9/Streamline-Logo.png'} style={{ width: 50, height: 50 }}/> Streamline
       </Link>
       <div>
         <ul className="navbar-nav">
