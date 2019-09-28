@@ -50,6 +50,7 @@ class Search extends Component {
     return (
       <div>
       <Hero backgroundImage="https://i.ibb.co/XWFKKdd/wp2081147.png">
+        
         <h1>Streamline</h1>
         <h2>Find your entertainment..all streamlined</h2>
 
