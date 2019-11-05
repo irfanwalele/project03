@@ -30,13 +30,13 @@
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.7.1",
+    "mongoose": "^5.7.7",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "rapidapi": "^2.0.3"
   },
   "devDependencies": {
-    "concurrently": "^4.1.2",
-    "nodemon": "^1.19.2"
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
   }
 }
