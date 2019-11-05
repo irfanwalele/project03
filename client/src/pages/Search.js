@@ -10,17 +10,15 @@ import "./style.css";
 class Search extends Component {
   state = {
     search: "",
-    breeds: [],
+    films: [],
     results: [],
     error: ""
   };
 
-  // When the component mounts, get a list of all available base breeds and update this.state.breeds
-  componentDidMount() {
-    // API.getBaseBreedsList()
-    //   .then(res => this.setState({ breeds: res.data.message }))
-    //   .catch(err => console.log(err));
-  }
+  //componentDidMount() {
+    //   .then(res => this.setState({ films: res.data.message }))
+	  //   .catch(err => console.log(err));
+  //}
 
   handleInputChange = event => {
     this.setState({ search: event.target.value }, () => console.log(this.state));
@@ -52,7 +50,7 @@ class Search extends Component {
       <Hero backgroundImage="https://i.ibb.co/XWFKKdd/wp2081147.png">
         
         <h1>Streamline</h1>
-        <h2>Find your entertainment..all streamlined</h2>
+      {/* <h2>Find your entertainment..all streamlined</h2> */}
 
       <Container>
           <Alert
@@ -65,7 +63,7 @@ class Search extends Component {
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
-            breeds={this.state.breeds}
+            films={this.state.films}
           />
           </Container>
 

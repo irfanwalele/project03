@@ -3,8 +3,8 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <span>Streamline 2019</span>
+    <footer className="footer text-center">
+      <span>&copy; Streamline 2019</span>
     </footer>
   );
 }

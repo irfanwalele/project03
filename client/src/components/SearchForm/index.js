@@ -6,20 +6,20 @@ function SearchForm(props) {
   return (
     <form className="search">
       <div className="form-group">
-        <label htmlFor="breed"></label>
+        <label htmlFor="film"></label>
         <input
           value={props.search}
           onChange={props.handleInputChange}
-          name="breed"
-          list="breeds"
+          name="film"
+          list="films"
           type="text"
           className="form-control"
           placeholder="Search film or tv show"
-          id="breed"
+          id="film"
         />
-        <datalist id="breeds">
-          {props.breeds.map(breed => (
-            <option value={breed} key={breed} />
+        <datalist id="films">
+          {props.films.map(film => (
+            <option value={film} key={film} />
           ))}
         </datalist>
         <button href="#results" type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
