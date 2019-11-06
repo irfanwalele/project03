@@ -1,13 +1,20 @@
 form.search {
-  overflow: auto;
-  margin-bottom: 10px;
+	overflow: auto;
+	margin-bottom: 10px;
 }
 
 form.search button[type="submit"] {
-  float: right;
-  margin-top: 10px;
+	float: right;
+	/* margin-top: 10px; */
+	font-family: "Sarpanch", sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
+}
+
+.form-control {
+	display: initial;
+	width: calc(100% - 85px);
+	font-family: "Sarpanch", sans-serif;
 }

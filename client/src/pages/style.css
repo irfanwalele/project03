@@ -1,3 +1,7 @@
 #results {
-    display: flex;
+	display: flex;
+}
+
+h1 {
+	font-family: "Sarpanch", sans-serif;
 }
