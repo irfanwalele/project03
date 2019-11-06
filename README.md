@@ -1,3 +1,25 @@
+# Streamline
+
+The Streamline app simplifies the way a user can find which Streaming Service the desired TV Show and or Movie is currently being streamed using. With the search results rendered on a single page, the user is then able to access the TV Show/Movie by clicking on the corresponding Streaming service icon.
+
+# Demo
+
+[Streamline Demo](https://streamlinecordcutters.herokuapp.com/): [https://streamlinecordcutters.herokuapp.com/](https://streamlinecordcutters.herokuapp.com/)
+<br>
+
+[GitHub](https://github.com/irfanwalele/project03/): [https://github.com/irfanwalele/project03](https://github.com/irfanwalele/project03)
+
+<img src="./Streamline.png" alt="Streamline Demo Home Screen">
+
+# Created By
+
+Jonathan Behar
+Cory McShea
+Irfan Walele
+Fahim Jamel
+
+## Made using
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
